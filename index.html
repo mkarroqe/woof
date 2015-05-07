@@ -6,21 +6,21 @@ i think i'm funny
 made by Mary Karroqe 
 have fun
 
+also please don't sue me I named some brands but they're obviously not mine and belong to their respective owners cool thank you
+
 -->
 <html>
 	<head>
-		<title>Woof Woof</title>
+		<title>too wild</title>
 
 		<style>
-			.header {
-				text-align: center;
-				margin-top: 5%;
-				margin-right: 20%;
-			}
 			.puppy {
+				padding-right: 20%;
 				padding-left: 20%;
-				padding-top: 10%;
-				margin: auto;
+				padding-top: 5%;
+			}
+			.header {
+				padding-top: 1%;
 			}
 		</style>
 		
@@ -28,40 +28,173 @@ have fun
 
 			function hover(woof) {
 			    woof.setAttribute('src', 'pup2.png');
+			    ok();
 			}
+
 			function unhover(woof) {
 			    woof.setAttribute('src', 'pup1.png');
+			    ko();
 			}
-			function init(){
-				console.log("Welcome to my console.  Type 'okay();' and hit enter to move on.");
-			}
-			function okay(){
-				console.log("i wanted to tell you a story but i'm too tired and it's time for bed.");
-				
-				/*var storyBits = [
-					"It all began with my"
-				]
-				//random array
-				//random expressions
-				//odd odd story
-				//first word in the string can't start with "then" or "after" if it's the first line.*/
 
+			function init(){
+				console.log("I see you.  No easter eggs yet but check back soon ;)");
+			}
+
+			function ok(){
+				var nouns = [
+					"my unicorn",
+					"the hamburger",
+					"the lukewarm salad",
+					"your father",
+					"my mother",
+					"your great-uncle",
+					"the hot photographer",
+					"the cashier",
+					"the imaginary friend",
+					"his pedicurist",
+					"the president's grocer",
+					"your nephew's pediatrician",
+					"my podiatrist",
+					"my chiropractor",
+					"my SAT proctor",
+					"my friend the magician",
+					"my severed umbilical cord",
+					"my 9th grade english teacher",
+					"my friend with the foot fetish",
+					"my fried brain",
+					"my overdue physics lab",
+					"your tax forms",
+					"your social security number",
+					"my local sephora store",
+					"my congressman",
+					"my build-a-bear",
+					"my pillow-pet",
+					"my snuggie",
+					"my calculator",
+					"the cashier's charred esophagus",
+					"ben's calzone addiction",
+					"my favorite fanfiction",
+					"my SAT score",
+					"my resume",
+					"the pink pencil sharpener",
+					"grandma",
+					"my crazy french teacher",
+					"everyone's gynocologist",
+					"the librarian",
+					"my kidney donor",
+					"the hacker's cow onesie",
+					"the pet gorilla",
+					"the priest's secret candy stash",
+					"her third grade diary",
+					"his high school gym bag",	
+					"Santa's allergy medications",
+					"my milkshakes",
+					"my beard",
+					"the president",
+					"Marilyn Monroe",
+					"the inventor of ice cream",
+					"Jamba Juice",
+					"my Chipotle addiction",
+					"but 6 saltine crackers",
+					"the tourists",
+					"the salamanders",
+					"my birthday party"	
+				]
+
+				var verbs = [
+					"had the audacity to run away from",
+					"actually dedicated a song to",
+					"mugged",
+					"embellished",
+					"ate",
+					"indulged in",
+					"inspired",
+					"detained",
+					"arrested",
+					"suffocated",
+					"limited",
+					"blended away",
+					"danced with",
+					"avoided",
+					"ruined",
+					"baptized",
+					"initiated",
+					"drew",
+					"seduced",
+					"christened",
+					"alienated",
+					"corrupted",
+					"bankrupted",
+					"salivated",
+					"melted",
+					"fried",
+					"heightened",
+					"destroyed",
+					"bombed",
+					"mocked",
+					"fortified",
+					"calculated",
+					"sang to silence",
+					"ran for mayor to excite",
+					"produced 10 larvae to confuse",
+					"smashed",
+					"barked at",
+						
+				]
+
+				noun = nouns[Math.floor(Math.random()*nouns.length)];
+				noun2 = nouns[Math.floor(Math.random()*nouns.length)];
+				verb = verbs[Math.floor(Math.random()*verbs.length)];
+
+				translation = noun + " " + verb + " " + noun2;
+				document.getElementById("box").style.display = "initial";
+				document.getElementById("box").innerHTML = translation;
+
+			}
+
+			function ko() {
+				document.getElementById("box").style.display = "none";
 			}
 			
 		</script>
 
 	</head>
-	<body onload="init();">
+	<body onload="init();" style="text-align:center">
 
+		<div class="header">
+			<p> the pup's party gossip: </p>
+		</div>
 		<div class="puppy">
 			<img id="puppy" src="pup1.png" onmouseover="hover(this);" onmouseout="unhover(this);" />
+			<br /><br /><br />
 		</div>
-		<div class="header">
-			a wild party
+		<div id="box">
+
 		</div>
 		
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
