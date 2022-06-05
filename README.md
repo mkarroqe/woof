@@ -3,4 +3,4 @@
 
 | The pup | The gossip |
 | - | - |
-| <img src="img/before.png" /> | <img src="img/after.png" /> |
+| <img src="before.png" /> | <img src="after.png" /> |
